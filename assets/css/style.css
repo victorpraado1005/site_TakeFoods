@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* a cada 1rem será considera 10px */
+  font-size: 62.5%;
+}
+
+header nav ul li a {
+  color: white;
+}
+
+body {
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.nav {
+  max-width: 1024px;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1.5rem;
+}
+
+.logo {
+  font-size: 3rem;
+  font-family: "Italiana", serif;
+  background: linear-gradient(to right, #80b918 20%, #006400 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav_list {
+  display: none;
+}
+
+.nav_toggle > i {
+  font-size: 4.5rem;
+  color: #80b918;
+}
+
+/** Menu Toggle **/
+
+.nav_menu.on {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #80b918;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 0.7s;
+}
+
+.nav_menu.on ul {
+  display: block;
+  text-align: center;
+}
+
+.nav_menu.on ul a {
+  transition-duration: 1s;
+  font-size: 3rem;
+  line-height: 8rem;
+  font-family: "Inter", sans-serif;
+}
+
+.nav_menu.on .nav_toggle {
+  position: absolute;
+  top: 8;
+  right: 0;
+  margin-right: 1.5em;
+}
+
+.nav_menu.on .nav_toggle i {
+  color: white;
+  font-size: 4.5rem;
+}
+
+.home_presentation {
+  padding-top: 11rem;
+}
+
+.text_presentation {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+}
+
+.subtitle_presentation {
+  font-size: 1.5rem;
+  text-align: center;
+}
