@@ -37,6 +37,12 @@ img {
   height: auto;
 }
 
+.bd_container{
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -51,7 +57,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 1.5rem;
+  padding: 3rem 0;
+  /* border: 1px solid black; */
 }
 
 .logo {
@@ -112,12 +119,35 @@ img {
   font-size: 4.5rem;
 }
 
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin: 0 auto;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1, 5rem;
+}
+
 .home_presentation {
-  padding-top: 11rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.img_home{
+  width: 60%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+
+.home_container {
+  padding: 0 1rem 1rem 1rem;
+  /* border: 1px solid black; */
 }
 
 .text_presentation {
-  font-size: 3rem;
+  font-size: 2.3rem;
   text-align: center;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -126,4 +156,55 @@ img {
 .subtitle_presentation {
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.button_home {
+  padding: 0 3rem;
+}
+
+.button_home a {
+  margin-bottom: 1rem;
+}
+
+.btn_home {
+  width: 75%;
+  background: linear-gradient(to right, #2b9348 0%, #80b918 100%);
+  border: none;
+  outline: none;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.4rem 2.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  text-align: center;
+  outline: none;
+  color: white;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+@media (min-width: 820px){
+  .img_home{
+    width: 45%;
+  }
+
+  .text_presentation{
+    font-size: 3.5rem;
+  }
+
+  .subtitle_presentation{
+    font-size: 2rem;
+  }
+
+  .button_home{
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  .btn_home{
+    width: 40%;
+    padding: 1.8rem 2rem;
+  }
 }
