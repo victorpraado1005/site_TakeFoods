@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("font-awesome/css/fontawesome-all.min.css");
 
 *,
 *::after,
@@ -43,12 +44,17 @@ img {
   margin: 0 auto;
 }
 
+.bg_green{
+  background-color: #cef3cc;
+}
+
 .header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
+  background-color: white;
 }
 
 .nav {
@@ -133,6 +139,7 @@ img {
 .home_presentation {
   padding-top: 6rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .img_home{
@@ -185,26 +192,59 @@ img {
   transition: all 0.4s ease-in-out;
 }
 
-@media (min-width: 820px){
-  .img_home{
-    width: 45%;
-  }
+section{
+  padding: 2.2rem 0;
+}
 
-  .text_presentation{
-    font-size: 3.5rem;
-  }
+.title_about{
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+}
 
-  .subtitle_presentation{
-    font-size: 2rem;
-  }
+.card_about{
+  margin: 0 2rem;
+  background-color: white;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
 
-  .button_home{
-    display: flex;
-    margin-top: 4rem;
-  }
+.text_about{
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  font-weight: 12px;
+  margin-top: 1rem;
+}
 
-  .btn_home{
-    width: 40%;
-    padding: 1.8rem 2rem;
-  }
+.title_operation{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.card_operation{
+  background-color: #cef3cc;
+  margin: 4rem 6rem;
+  padding: 4rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px #cef3cc;
+}
+
+.card_operation:not(:last-child)::after{
+  content: "\f063";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.card_operation i{
+  font-size: 2.5rem;
+}
+
+.card_operation p{
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
 }
