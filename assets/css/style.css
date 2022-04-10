@@ -45,7 +45,16 @@ img {
 }
 
 .bg_green{
-  background-color: #cef3cc;
+  /* background-image: url(../images/bg_green.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+  background-color: #f1fcdc;
+}
+
+.title{
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 1rem;
 }
 
 .header {
@@ -218,26 +227,13 @@ section{
   margin-top: 1rem;
 }
 
-.title_operation{
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: 1.5rem;
-}
-
 .card_operation{
-  background-color: #cef3cc;
-  margin: 4rem 6rem;
-  padding: 4rem 2rem;
+  background-color: #f1fcdc;
+  margin: 3rem 8rem;
+  padding: 5rem 2rem;
   border-radius: 15px;
   text-align: center;
-  box-shadow: 0 4px 10px #cef3cc;
-}
-
-.card_operation:not(:last-child)::after{
-  content: "\f063";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  font-size: 2.5rem;
+  box-shadow: 0 4px 10px #f1fcdc;
 }
 
 .card_operation i{
@@ -247,4 +243,70 @@ section{
 .card_operation p{
   font-size: 1.4rem;
   margin-top: 1.5rem;
+}
+
+.arrow_down{
+  font-size: 4rem;
+  text-align: center;
+}
+
+.card_clients{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3rem;
+}
+
+.card{
+  width: 70%;
+  background-color: white;
+  box-shadow: 0 4px 10px #cef3cc;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.logo_clients{
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.card h3{
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.grow{
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover{
+  transform: scale(1.1);
+}
+
+.takefoods_fit{
+  background-image: url(../images/bg_takefoods_fit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  padding: 3rem 4 rem;
+}
+
+.title_takefoods_fit{
+  width: 50%;
+  margin: auto;
+  color: green;
+  text-align: center;
+  font-size: 2.1rem;
+  padding: 1rem 2rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  margin-bottom: 2rem;
+}
+
+.card_takefoods_fit{
+  padding: 8rem;
+  border: 1px solid white;
 }
