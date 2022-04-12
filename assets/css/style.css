@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("font-awesome/css/fontawesome-all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 *,
 *::after,
@@ -53,8 +55,10 @@ img {
 
 .title{
   text-align: center;
-  font-size: 2.2rem;
-  margin-top: 1rem;
+  font-size: 2.7rem;
+  font-family: 'Oswald', sans-serif;
+  color: #65950a;
+  letter-spacing: 2.5px;
 }
 
 .header {
@@ -91,7 +95,7 @@ img {
 
 .nav_toggle > i {
   font-size: 4.5rem;
-  color: #80b918;
+  color: #65950a;
 }
 
 /** Menu Toggle **/
@@ -102,12 +106,12 @@ img {
   right: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #80b918;
+  background-color: #f1fcdc;
   z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition-duration: 0.7s;
+  transition-duration: .7s;
 }
 
 .nav_menu.on ul {
@@ -116,21 +120,23 @@ img {
 }
 
 .nav_menu.on ul a {
-  transition-duration: 1s;
-  font-size: 3rem;
+  transition-duration: 1.3s;
+  font-size: 3.4rem;
   line-height: 8rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+  color: #65950a;
 }
 
 .nav_menu.on .nav_toggle {
   position: absolute;
   top: 8;
   right: 0;
-  margin-right: 1.5em;
+  margin-right: 1rem;
 }
 
 .nav_menu.on .nav_toggle i {
-  color: white;
+  color: #65950a;
   font-size: 4.5rem;
 }
 
@@ -163,16 +169,24 @@ img {
 }
 
 .text_presentation {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   text-align: center;
   letter-spacing: 2px;
   word-spacing: 2px;
+  color: rgb(77, 70, 70);
+  font-family: 'Oswald', sans-serif;
+}
+
+.text_presentation .logo{
+  font-size: 3.8rem;
 }
 
 .subtitle_presentation {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 1.5px;
   text-align: center;
   margin-bottom: 2rem;
+  font-family: 'Oswald', sans-serif;
 }
 
 .button_home {
@@ -205,26 +219,23 @@ section{
   padding: 2.2rem 0;
 }
 
-.title_about{
-  font-size: 3rem;
-  text-align: center;
-  padding: 2rem 0;
-}
-
 .card_about{
   margin: 0 2rem;
   background-color: white;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 10%);
+  box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.22);
   border-radius: 20px;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .text_about{
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-  font-weight: 12px;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 10px;
   margin-top: 1rem;
+  font-family: 'Nunito', sans-serif;
+  
 }
 
 .card_operation{
@@ -260,8 +271,8 @@ section{
 .card{
   width: 70%;
   background-color: white;
-  box-shadow: 0 4px 10px #cef3cc;
-  border-radius: 20px;
+  box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.22);
+  border-radius: 10px;
   margin: auto;
   margin-top: 2rem;
   text-align: center;
@@ -283,30 +294,66 @@ section{
 }
 
 .grow:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-.takefoods_fit{
+/* .takefoods_fit{
   background-image: url(../images/bg_takefoods_fit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.8;
   padding: 3rem 4 rem;
+} */
+
+.form_contact{
+  margin: 2rem auto;
+  border: 3px solid #65950a;
+  border-radius: 10px;
+  padding: 1.4rem;
 }
 
-.title_takefoods_fit{
-  width: 50%;
-  margin: auto;
-  color: green;
-  text-align: center;
-  font-size: 2.1rem;
-  padding: 1rem 2rem;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
+.form{
+  display: block;
+  font-size: 1.7rem;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #65950a;
+}
+
+.form_contact h1{
   margin-bottom: 2rem;
 }
 
-.card_takefoods_fit{
-  padding: 8rem;
-  border: 1px solid white;
+.form input, textarea{
+  width: 60%;
+  height: 30px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #65950a;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.form textarea{
+  width: 300px;
+  height:120px;
+}
+
+.btn_enviar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form input[type=submit]{
+  background-color: #65950a;
+  color: white;
+  width: 50%;
+  height: 35px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-weight: 600;
 }
