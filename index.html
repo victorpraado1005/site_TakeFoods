@@ -74,12 +74,6 @@
             consectetur rem amet veritatis magni odio architecto inventore
             reprehenderit harum qui consequatur.
           </p>
-          <p class="text_about">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-            eveniet aspernatur tempore a, accusamus mollitia omnis fuga cum
-            consectetur rem amet veritatis magni odio architecto inventore
-            reprehenderit harum qui consequatur.
-          </p>
         </div>
       </div>
     </section>
@@ -87,33 +81,27 @@
 
     <!-- INICIO OPERAÇÃO -->
     <section class="operation">
-      <h1 class="title">Operação</h1>
-      <div class="card_operation grow">
-        <i class="fa-solid fa-bowl-food"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-          veniam?
-        </p>
-      </div>
-      <div class="arrow_down">
-        <i class="fa-solid fa-arrow-down-long"></i>
-      </div>
-      <div class="card_operation grow">
-        <i class="fa-solid fa-truck-fast"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-          veniam?
-        </p>
-      </div>
-      <div class="arrow_down">
-        <i class="fa-solid fa-arrow-down-long"></i>
-      </div>
-      <div class="card_operation grow">
-        <i class="fa-solid fa-utensils"></i>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
-          veniam?
-        </p>
+      <div class="container_operation bd_container">
+        <h1 class="title">Operação</h1>
+        <div class="card_operation grow">
+          <i class="fa-solid fa-bowl-food"></i>
+          <p>Preparação da comida na sede da empresa.</p>
+        </div>
+        <div class="arrow_down">
+          <i class="fa-solid fa-arrow-down-long"></i>
+        </div>
+        <div class="card_operation grow">
+          <i class="fa-solid fa-truck-fast"></i>
+          <p>Transporte do alimento até o cliente.</p>
+        </div>
+        <div class="arrow_down">
+          <i class="fa-solid fa-arrow-down-long"></i>
+        </div>
+        <div class="card_operation grow">
+          <i class="fa-solid fa-utensils"></i>
+          <p>Funcionária no local para preparar o ambiente para o cliente.</p>
+          <p class="obs_operation">*Mínimo de XX refeições.</p>
+        </div>
       </div>
     </section>
     <!-- FIM OPERAÇÃO -->
@@ -125,19 +113,27 @@
         <div class="card_clients">
           <div class="card grow">
             <img src="assets/images/logo_cea.png" alt="" class="logo_clients" />
-            <h3>C&A</h3>
+            <h3 class="title_clients">C&A</h3>
+          </div>
+          <div class="card grow">
+            <img
+              src="assets/images/logo_poupa_tempo.png"
+              alt=""
+              class="logo_clients"
+            />
+            <h3 class="title_clients">Poupa tempo</h3>
+          </div>
+          <div class="card grow">
+            <img
+              src="assets/images/logo_detran.png"
+              alt=""
+              class="logo_clients"
+            />
+            <h3 class="title_clients">Detran</h3>
           </div>
           <div class="card grow">
             <img src="assets/images/logo_cea.png" alt="" class="logo_clients" />
-            <h3>Poupa tempo</h3>
-          </div>
-          <div class="card grow">
-            <img src="assets/images/logo_cea.png" alt="" class="logo_clients" />
-            <h3>Detran</h3>
-          </div>
-          <div class="card grow">
-            <img src="assets/images/logo_cea.png" alt="" class="logo_clients" />
-            <h3>C&A</h3>
+            <h3 class="title_clients">C&A</h3>
           </div>
         </div>
       </div>
@@ -154,8 +150,16 @@
             alimentação saudavel com deliciosas marmitas fitness congeladas.
           </h2>
           <div class="buttons_takefoods_fit">
-            <a href="" class="btn btn_order">Fazer pedido</a>
-            <a href="" class="btn btn_menu">Acessar nosso Cardápio</a>
+            <div class="btn_border">
+              <div class="btn_fit">
+                <a href="">Fazer pedido</a>
+              </div>
+            </div>
+            <div class="btn_border">
+              <div class="btn_fit">
+                <a href="">Ver Cardápio</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -163,9 +167,9 @@
     <!-- FIM TAKEFOODS FIT -->
 
     <!-- INICIO CONTATO -->
-    <section class="contact bg_green">
+    <section class="contact">
       <div class="form_contact bd_container">
-        <h1 class="title">Contato</h1>
+        <h1 class="title">Fale Conosco</h1>
         <form action="" class="form">
           <label for="nome" class="mg_bottom">Nome:</label>
           <div>
@@ -200,6 +204,29 @@
       </div>
     </section>
     <!-- FIM CONTATO -->
+
+    <!-- INICIO FOOTER -->
+    <section class="bg_green">
+      <div class="container_footer bd_container">
+        <h2><a href="" class="logo">TakeFoods</a></h2>
+        <ul class="list_footer">
+          <h2 class="title_footer">Informações:</h2>
+          <li class="info_footer"><a href="#">Sobre</a></li>
+          <li class="info_footer"><a href="#">Clientes</a></li>
+          <li class="info_footer"><a href="#">Takefoods.FIT</a></li>
+          <li class="info_footer"><a href="#">Contato</a></li>
+        </ul>
+        <ul class="list_footer">
+          <h2 class="title_footer">Endereço:</h2>
+          <li class="info_footer">São Paulo - SP</li>
+          <li class="info_footer">Rua Gama Lobo, 1289 - Ipiranga</li>
+          <li class="info_footer">(11) 5575-7891</li>
+          <li class="info_footer">contato@takefoods.com.br</li>
+        </ul>
+        <p class="copyright">Copyright &#169; | Takefoods</p>
+      </div>
+    </section>
+    <!-- FIM FOOTER -->
 
     <script src="assets/js/script.js"></script>
     <script
