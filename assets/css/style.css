@@ -220,7 +220,8 @@ section{
 }
 
 .card_about{
-  margin: 0 2rem;
+  margin: 0 auto;
+  max-width: 500px;
   background-color: white;
   padding: 1.5rem;
   box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.22);
@@ -248,18 +249,19 @@ section{
   background-color: #f1fcdc;
   margin: 3rem 6rem;
   padding: 4rem 1.5rem;
+  max-width: 300px;
   border-radius: 15px;
   text-align: center;
   box-shadow: 0 4px 10px #f1fcdc;
 }
 
 .card_operation i{
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #65950a;
 }
 
 .card_operation p{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-top: 1.5rem;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -489,6 +491,11 @@ transition: all ease 0.5s;
   color: black;
 }
 
+.container_copyright{
+  margin-top: 2rem;
+  text-align: center;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 348px){
@@ -499,5 +506,65 @@ transition: all ease 0.5s;
   .form textarea{
     width: 250px;
     height:100px;
+  }
+}
+
+@media (min-width: 480px){
+  .takefoods_fit{
+    background-image: url(../images/bg_takefoods_fit.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 550px){
+  .bd_container{
+    max-width: 1024px;
+    width: calc(100% - 8rem);
+    margin: 0 auto;
+  }
+
+  .nav_menu.on .nav_toggle {
+    right: 30;
+  }
+
+  .form_contact{
+    max-width: 600px;
+  }
+
+  .takefoods_fit_container{
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 3rem 2rem;
+  }
+
+  .clients{
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 768px){
+  .container_footer{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .container_footer h2{
+    margin-right: 4rem;
+  }
+
+  .list_footer{
+    margin-right: 2rem;
+    text-align: start;
+  }
+
+  .img_home{
+    width: 45%;
+  }
+
+  .btn_home{
+    width: 50%;
   }
 }
