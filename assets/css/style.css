@@ -47,9 +47,6 @@ img {
 }
 
 .bg_green{
-  /* background-image: url(../images/bg_green.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; */
   background-color: #f1fcdc;
 }
 
@@ -77,7 +74,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 0;
-  /* border: 1px solid black; */
 }
 
 .logo {
@@ -288,6 +284,8 @@ section{
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .card{
@@ -545,6 +543,32 @@ transition: all ease 0.5s;
 }
 
 @media (min-width: 768px){
+
+  .nav_toggle{
+    display: none;
+  }
+
+  .nav_list {
+    display: flex;
+  }
+
+  .nav_menu ul a {
+    font-size: 2rem;
+    line-height: 6rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    color: #65950a;
+    margin: 0 1rem;
+  }
+
+  .title{
+    font-size: 3.5rem;
+  }
+
+  .text_about{
+    font-size: 1.6rem;
+  }
+
   .container_footer{
     display: flex;
     justify-content: center;
@@ -566,5 +590,20 @@ transition: all ease 0.5s;
 
   .btn_home{
     width: 50%;
+  }
+}
+
+@media (min-width: 1024px){
+  .card_clients{
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+  }
+
+  .card{
+    width: 180px;
+    height: 180px;
   }
 }
