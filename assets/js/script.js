@@ -14,9 +14,11 @@ nav_toggle.addEventListener("click", () => {
 
 document.querySelectorAll(".nav_toggle_link").forEach(function(link){
     link.addEventListener("click", ()=>{
-        document.body.style.overflow = show ? "hidden" : "initial"
+        if(getComputedStyle(nav_toggle).display !== "none"){
+            document.body.style.overflow = show ? "hidden" : "initial"
 
-        nav_menu.classList.toggle("on", show)
-        show = !show;
+            nav_menu.classList.toggle("on", show)
+            show = !show;
+        }
     })
 })
