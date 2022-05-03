@@ -22,16 +22,16 @@
           </div>
           <ul class="nav_list">
             <li class="nav_item">
-              <a href="#home" class="nav_link">Home</a>
+              <a href="#home" class="nav_toggle_link">Home</a>
             </li>
             <li class="nav_item">
-              <a href="#sobre" class="nav_link">Sobre</a>
+              <a href="#clients" class="nav_toggle_link">Clientes</a>
             </li>
             <li class="nav_item">
-              <a href="#operacao" class="nav_link">Operação</a>
+              <a href="#takefoods_fit" class="nav_toggle_link">TakeFoods.FIT</a>
             </li>
             <li class="nav_item">
-              <a href="#contato" class="nav_link">Contato</a>
+              <a href="#contact" class="nav_toggle_link">Contato</a>
             </li>
           </ul>
         </div>
@@ -41,7 +41,7 @@
 
     <!-- INICIO CONTEUDO HOME PRESENTATION -->
     <main>
-      <section class="home_presentation">
+      <section class="home_presentation" id="home">
         <img class="img_home" src="assets/images/salad_home.png" alt="" />
         <div class="home_container bd_container">
           <h1 class="text_presentation">
@@ -125,7 +125,7 @@
     <!-- FIM OPERAÇÃO -->
 
     <!-- INICIO CLIENTES -->
-    <section class="bg_green">
+    <section class="bg_green" id="clients">
       <div class="clients bd_container">
         <h1 class="title">Clientes</h1>
         <div class="card_clients">
@@ -159,7 +159,7 @@
     <!-- FIM CLIENTES -->
 
     <!-- INICIO TAKEFOODS FIT -->
-    <section class="takefoods_fit">
+    <section class="takefoods_fit" id="takefoods_fit">
       <div class="takefoods_fit_container bd_container">
         <div class="takefoods_fit_data">
           <h1 class="title_takefoods_fit">Takefoods.FIT</h1>
@@ -181,7 +181,7 @@
     <!-- FIM TAKEFOODS FIT -->
 
     <!-- INICIO CONTATO -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="form_contact bd_container">
         <h1 class="title">Fale Conosco</h1>
         <form action="" class="form">
@@ -225,10 +225,12 @@
         <h2><a href="" class="logo">TakeFoods</a></h2>
         <ul class="list_footer">
           <h2 class="title_footer">Informações:</h2>
-          <li class="info_footer"><a href="#">Sobre</a></li>
-          <li class="info_footer"><a href="#">Clientes</a></li>
-          <li class="info_footer"><a href="#">Takefoods.FIT</a></li>
-          <li class="info_footer"><a href="#">Contato</a></li>
+          <li class="info_footer"><a href="#home">Home</a></li>
+          <li class="info_footer"><a href="#clients">Clientes</a></li>
+          <li class="info_footer">
+            <a href="#takefoods_fit">Takefoods.FIT</a>
+          </li>
+          <li class="info_footer"><a href="#contact">Contato</a></li>
         </ul>
         <ul class="list_footer">
           <h2 class="title_footer">Endereço:</h2>
