@@ -196,30 +196,47 @@
     <section class="contact" id="contact">
       <div class="form_contact bd_container">
         <h1 class="title">Fale Conosco</h1>
-        <form action="" class="form">
+        <form
+          action="https://formsubmit.co/otavio@takefoods.com.br"
+          method="POST"
+          class="form"
+        >
+          <input
+            type="hidden"
+            name="_next"
+            value="http://www.takefoods.com.br/"
+          />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Contato - Site Takefoods"
+          />
+          <input type="hidden" name="_cc" value="vera@takefoods.com.br" />
+          <input type="hidden" name="_captcha" value="false" />
           <label for="nome" class="mg_bottom">Nome:</label>
           <div>
-            <input type="text" placeholder="Nome: " />
+            <input type="text" placeholder="Nome: " name="name" />
           </div>
 
-          <label for="email">E-mail:</label>
+          <label>E-mail:</label>
           <div>
-            <input type="email" placeholder="E-mail: :" />
+            <input type="email" placeholder="E-mail: :" name="email" />
           </div>
 
-          <label for="number">Telefone:</label>
+          <label>Telefone:</label>
           <div>
-            <input type="number" placeholder="Telefone:" />
+            <input type="number" placeholder="Telefone:" name="phone" />
           </div>
 
           <div>
-            <label for="message">Mensagem:</label>
+            <label>Mensagem:</label>
           </div>
           <div>
             <textarea
               name="message"
               id="message"
               placeholder="Digite sua mensagem..."
+              name="message"
             ></textarea>
           </div>
 
