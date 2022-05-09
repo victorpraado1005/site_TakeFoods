@@ -31,8 +31,9 @@ if (!lsContent) {
       .then((data) => {
         let ipAddress = data.ip
         var data = new Date()
+        dataISO = data.toISOString()
         console.log(ipAddress)
-        console.log(data)
+        console.log(dataISO)
       })
   })
 }
