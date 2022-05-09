@@ -306,11 +306,15 @@ section {
   border-radius: 10px;
   margin: auto;
   margin-top: 3rem;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo_clients {
-  width: 50%;
+  width: 65px;
+  height: 65px;
   margin-top: 2rem;
 }
 
@@ -318,7 +322,7 @@ section {
   color: #65950a;
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
@@ -619,7 +623,6 @@ textarea:focus {
 }
 
 @media (min-width: 948px) {
-
   .button_home {
     display: flex;
     flex-direction: column;
