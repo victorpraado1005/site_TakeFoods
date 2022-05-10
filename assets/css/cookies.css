@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.cookies-left a {
+.cookies-top a {
   color: #65950a;
   text-decoration: underline;
 }
@@ -30,6 +30,24 @@
   border-radius: 10px;
   margin-top: 20px;
   padding: 10px 60px;
+  color: #65950a;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btnClose-container {
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.btnClose {
+  border: 0;
+  background-color: #fff;
+  border: 1px solid #65950a;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px 8px;
   color: #65950a;
   font-weight: bold;
   cursor: pointer;
