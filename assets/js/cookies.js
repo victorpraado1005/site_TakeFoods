@@ -1,3 +1,25 @@
+//configuração do firebase e inicialização do app
+const firebaseConfig = {
+  apiKey: 'AIzaSyC-g9vPIXmrj9fjuxS7YPzzBK7sUQvzYfg',
+  authDomain: 'sitetakefoods.firebaseapp.com',
+  projectId: 'sitetakefoods',
+  storageBucket: 'sitetakefoods.appspot.com',
+  messagingSenderId: '686558896612',
+  appId: '1:686558896612:web:583e10a2866729021c67f1',
+  measurementId: 'G-313JZXQM17'
+}
+
+firebase.initializeApp(firebaseConfig)
+const db = firebase.firestore()
+
+db.collection('CookiesInfo')
+  .get()
+  .then((snapshot) => {
+    snapshot.forEach((doc) => {
+      console.log(doc.data())
+    })
+  })
+
 let cookiesHtml = `
 <div class="cookies-container">
 <div class="cookies-left">
@@ -34,6 +56,17 @@ if (!lsContent) {
         dataISO = data.toISOString()
         console.log(ipAddress)
         console.log(dataISO)
+        db.collection('CookiesInfo')
+          .add({
+            UserIP: ipAddress,
+            UserData: dataISO
+          })
+          .then(() => {
+            console.log('Documento inserido com sucesso')
+          })
+          .catch((err) => {
+            console.log(err)
+          })
       })
   })
 }
