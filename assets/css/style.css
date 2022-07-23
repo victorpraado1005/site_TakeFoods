@@ -215,9 +215,7 @@ section {
   padding: 2.2rem 0rem;
 }
 
-.space_id {
-  padding-top: 6rem;
-}
+
 
 .card_about {
   margin: 0 auto;
@@ -412,6 +410,10 @@ section {
 .btn_fit:hover {
   transform: scale(1.15);
   transition: all ease 0.5s;
+}
+
+.contact{
+  margin: 24px 0;
 }
 
 .form_contact {
